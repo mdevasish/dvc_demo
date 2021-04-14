@@ -105,16 +105,11 @@ def train_and_evaluate(config_path):
     model_path = os.path.join(model_dir, "elasticnet.joblib")
     joblib.dump(lr, model_path)
 
-
-
-
-
 if __name__ == "__main__":
     now = datetime.now()
     dt_string = now.strftime("%d_%m_%Y_%H_%M_%S")
     fmt = 'run_'+ dt_string + '.log'
     log_path = os.path.join("logs",fmt)
-    #print("./logs/"+fmt)
     logging.basicConfig(filename = log_path,level = logging.DEBUG,format='%(levelname)s:%(message)s')
 
     args = argparse.ArgumentParser()
