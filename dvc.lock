@@ -44,15 +44,15 @@ train_and_evaluate:
     size: 3559
   params:
     params.yaml:
-      estimators.ElasticNet.params.alpha: 0.88
-      estimators.ElasticNet.params.l1_ratio: 0.89
+      estimators.ElasticNet.params.alpha: 0.89
+      estimators.ElasticNet.params.l1_ratio: 0.88
   outs:
   - path: reports/params.json
-    md5: 0568f34313ba7c5e55128b75dbcbee5c
+    md5: 57a5fb146f870e5103b7feb41427a1e3
     size: 46
   - path: reports/scores.json
-    md5: ac89e037063ee307b6d23c8ef0583610
-    size: 100
+    md5: 24c4fb766672619d7d51318364fdba85
+    size: 101
   - path: saved_models/elasticnet.joblib
-    md5: 2a0e3e5ca10064a1121258404e052207
+    md5: aa9019f4299ba0291a4c6445e31ea9f8
     size: 728

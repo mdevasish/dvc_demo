@@ -30,3 +30,18 @@ git remote add origin https://github.com/mdevasish/dvc_demo.git
 git branch -M main
 git push -u origin main
 ```
+
+To run the pipeline stages
+```
+dvc repro
+```
+
+To track the changes in parameters of the model 
+```
+dvc params diff
+```
+
+To verify the metrics difference due to change in the algo parameters
+```
+dvc metrics diff (or) dvc metrics show
+```
