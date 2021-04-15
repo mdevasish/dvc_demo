@@ -1,10 +1,10 @@
-from setuptools import setup,find_packages
+from setuptools import setup, find_packages
 
 setup(
-    name = "src",
+    name="src",
     version="0.0.1",
-    description = "Introductory session of MLOPs",
-    author = "mdevasish",
-    packages = find_packages(),
+    description="Introductory session of MLOPs",
+    author="mdevasish",
+    packages=find_packages(),
     license="MIT"
 )

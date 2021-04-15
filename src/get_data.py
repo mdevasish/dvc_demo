@@ -1,29 +1,29 @@
-## read params
-## process
-## copy the data from given_data to data directory
+# read params
+# process
+# copy the data from given_data to data directory
 
 import os
 import yaml
-import pandas as pd 
+import pandas as pd
 import argparse
 
+
 def read_params(config_path):
-    with open (config_path,"r") as yaml_file:
+    with open(config_path, "r") as yaml_file:
         config = yaml.safe_load(yaml_file)
     return config
 
+
 def get_data_df(config_path):
     config = read_params(config_path)
-    #print(config)
+    # print(config)
     data_path = config['data_source']['s3_source']
-    df = pd.read_csv(data_path,sep = ',',encoding = 'utf-8')
+    df = pd.read_csv(data_path, sep=',', encoding='utf-8')
     return df
 
 
 if __name__ == "__main__":
     args = argparse.ArgumentParser()
-    args.add_argument("--config",default="params.yaml")
+    args.add_argument("--config", default="params.yaml")
     parsed_args = args.parse_args()
-    data = get_data_df(config_path = parsed_args.config)
-    
-
+    data = get_data_df(config_path=parsed_args.config)
