@@ -1,0 +1,36 @@
+DEBUG:Starting new HTTP connection (1): localhost:1234
+DEBUG:http://localhost:1234 "GET /api/2.0/mlflow/experiments/get-by-name?experiment_name=ElasticNet+regression HTTP/1.1" 200 162
+DEBUG:Popen(['git', 'version'], cwd=C:\Users\mdevasish\Desktop\wine quality, universal_newlines=False, shell=None, istream=None)
+DEBUG:Popen(['git', 'version'], cwd=C:\Users\mdevasish\Desktop\wine quality, universal_newlines=False, shell=None, istream=None)
+DEBUG:Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'The system cannot find the file specified', None, 2, None)
+DEBUG:Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\mdevasish\Desktop\wine quality, universal_newlines=False, shell=None, istream=<valid stream>)
+DEBUG:Starting new HTTP connection (1): localhost:1234
+DEBUG:http://localhost:1234 "POST /api/2.0/mlflow/runs/create HTTP/1.1" 200 915
+INFO:Elasticnet model (alpha=0.700000, l1_ratio=0.900000):
+INFO:  RMSE: 0.8052157818023471
+INFO:  MAE: 0.6589566909252961
+INFO:  R2: 0.007855176870708691
+DEBUG:Starting new HTTP connection (1): localhost:1234
+DEBUG:http://localhost:1234 "POST /api/2.0/mlflow/runs/log-parameter HTTP/1.1" 200 2
+DEBUG:Starting new HTTP connection (1): localhost:1234
+DEBUG:http://localhost:1234 "POST /api/2.0/mlflow/runs/log-parameter HTTP/1.1" 200 2
+DEBUG:Starting new HTTP connection (1): localhost:1234
+DEBUG:http://localhost:1234 "POST /api/2.0/mlflow/runs/log-metric HTTP/1.1" 200 2
+DEBUG:Starting new HTTP connection (1): localhost:1234
+DEBUG:http://localhost:1234 "POST /api/2.0/mlflow/runs/log-metric HTTP/1.1" 200 2
+DEBUG:Starting new HTTP connection (1): localhost:1234
+DEBUG:http://localhost:1234 "POST /api/2.0/mlflow/runs/log-metric HTTP/1.1" 200 2
+DEBUG:Starting new HTTP connection (1): localhost:1234
+DEBUG:http://localhost:1234 "GET /api/2.0/mlflow/runs/get?run_uuid=c9ed803037ed4f0f8e7a42774bca5d21&run_id=c9ed803037ed4f0f8e7a42774bca5d21 HTTP/1.1" 200 1555
+DEBUG:Starting new HTTP connection (1): localhost:1234
+DEBUG:http://localhost:1234 "GET /api/2.0/mlflow/runs/get?run_uuid=c9ed803037ed4f0f8e7a42774bca5d21&run_id=c9ed803037ed4f0f8e7a42774bca5d21 HTTP/1.1" 200 1555
+DEBUG:Starting new HTTP connection (1): localhost:1234
+DEBUG:http://localhost:1234 "POST /api/2.0/mlflow/runs/log-model HTTP/1.1" 200 2
+DEBUG:Starting new HTTP connection (1): localhost:1234
+DEBUG:http://localhost:1234 "POST /api/2.0/preview/mlflow/registered-models/create HTTP/1.1" 400 442
+DEBUG:Starting new HTTP connection (1): localhost:1234
+DEBUG:http://localhost:1234 "GET /api/2.0/mlflow/runs/get?run_uuid=c9ed803037ed4f0f8e7a42774bca5d21&run_id=c9ed803037ed4f0f8e7a42774bca5d21 HTTP/1.1" 200 2069
+DEBUG:Starting new HTTP connection (1): localhost:1234
+DEBUG:http://localhost:1234 "POST /api/2.0/preview/mlflow/model-versions/create HTTP/1.1" 200 397
+DEBUG:Starting new HTTP connection (1): localhost:1234
+DEBUG:http://localhost:1234 "POST /api/2.0/mlflow/runs/update HTTP/1.1" 200 385
